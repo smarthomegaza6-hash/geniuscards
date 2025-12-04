@@ -148,25 +148,60 @@ const App: React.FC = () => {
       {/* Custom Footer */}
       <footer className="text-center mt-12 w-full pb-8">
         
-        {/* Important Links Section */}
+        {/* Important Links Section - Enhanced Cards */}
         <div className="mb-8 w-full max-w-xl mx-auto px-4">
-            <h3 className="text-white text-lg font-bold mb-4 font-cairo border-b border-white/20 pb-2 inline-block px-8">روابط مهمة</h3>
-            <div className="grid grid-cols-2 gap-3">
-                <a href="https://anwermes.github.io/englishmaster5-9/" target="_blank" className="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-3 flex flex-col items-center justify-center gap-2 text-white transition-all duration-300 backdrop-blur-sm group active:scale-95 text-center hover:scale-105 hover:shadow-xl hover:shadow-black/20">
-                    <i className="fas fa-book-open text-yellow-300 text-2xl group-hover:scale-110 transition-transform"></i>
-                    <span className="font-bold text-sm">موقع الحلول والقواعد</span>
+            <h3 className="text-white text-lg font-bold mb-6 font-cairo border-b border-white/20 pb-2 inline-block px-8">روابط مهمة</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a href="https://anwermes.github.io/englishmaster5-9/" target="_blank" className="relative overflow-hidden bg-white/10 hover:bg-white/20 border border-white/20 rounded-2xl p-4 flex items-center gap-4 text-white transition-all duration-300 backdrop-blur-sm group hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/20">
+                    <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform shadow-inner">
+                        <i className="fas fa-book-open text-yellow-300 text-xl"></i>
+                    </div>
+                    <div className="text-right flex-1">
+                        <h4 className="font-bold text-base group-hover:text-yellow-200 transition-colors">موقع الحلول</h4>
+                        <p className="text-xs text-white/70">قواعد وشروحات</p>
+                    </div>
+                    <div className="absolute -left-2 -bottom-2 text-white/5 opacity-0 group-hover:opacity-100 transition-opacity text-5xl transform rotate-12">
+                        <i className="fas fa-book-open"></i>
+                    </div>
                 </a>
-                <a href="https://anwermes.github.io/flashcardsgames/" target="_blank" className="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-3 flex flex-col items-center justify-center gap-2 text-white transition-all duration-300 backdrop-blur-sm group active:scale-95 text-center hover:scale-105 hover:shadow-xl hover:shadow-black/20">
-                    <i className="fas fa-gamepad text-green-300 text-2xl group-hover:scale-110 transition-transform"></i>
-                    <span className="font-bold text-sm">ألعاب تفاعلية</span>
+
+                <a href="https://anwermes.github.io/flashcardsgames/" target="_blank" className="relative overflow-hidden bg-white/10 hover:bg-white/20 border border-white/20 rounded-2xl p-4 flex items-center gap-4 text-white transition-all duration-300 backdrop-blur-sm group hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/20">
+                    <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform shadow-inner">
+                        <i className="fas fa-gamepad text-green-300 text-xl"></i>
+                    </div>
+                    <div className="text-right flex-1">
+                        <h4 className="font-bold text-base group-hover:text-green-200 transition-colors">ألعاب تفاعلية</h4>
+                        <p className="text-xs text-white/70">تعلم بالمرح</p>
+                    </div>
+                    <div className="absolute -left-2 -bottom-2 text-white/5 opacity-0 group-hover:opacity-100 transition-opacity text-5xl transform rotate-12">
+                        <i className="fas fa-gamepad"></i>
+                    </div>
                 </a>
-                <a href="https://t.me/+afSETaZ232AzMmY0" target="_blank" className="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-3 flex flex-col items-center justify-center gap-2 text-white transition-all duration-300 backdrop-blur-sm group active:scale-95 text-center hover:scale-105 hover:shadow-xl hover:shadow-black/20">
-                    <i className="fab fa-telegram text-blue-300 text-2xl group-hover:scale-110 transition-transform"></i>
-                    <span className="font-bold text-sm">قناة التيليجرام</span>
+
+                <a href="https://t.me/+afSETaZ232AzMmY0" target="_blank" className="relative overflow-hidden bg-white/10 hover:bg-white/20 border border-white/20 rounded-2xl p-4 flex items-center gap-4 text-white transition-all duration-300 backdrop-blur-sm group hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/20">
+                    <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform shadow-inner">
+                        <i className="fab fa-telegram text-blue-300 text-xl"></i>
+                    </div>
+                    <div className="text-right flex-1">
+                        <h4 className="font-bold text-base group-hover:text-blue-200 transition-colors">قناة التيليجرام</h4>
+                        <p className="text-xs text-white/70">تابع الجديد</p>
+                    </div>
+                    <div className="absolute -left-2 -bottom-2 text-white/5 opacity-0 group-hover:opacity-100 transition-opacity text-5xl transform rotate-12">
+                        <i className="fab fa-telegram"></i>
+                    </div>
                 </a>
-                <a href="https://keeplearning.unrwa.org/" target="_blank" className="bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl p-3 flex flex-col items-center justify-center gap-2 text-white transition-all duration-300 backdrop-blur-sm group active:scale-95 text-center hover:scale-105 hover:shadow-xl hover:shadow-black/20">
-                    <i className="fas fa-graduation-cap text-orange-300 text-2xl group-hover:scale-110 transition-transform"></i>
-                    <span className="font-bold text-sm">منصة التعلم الرقمي</span>
+
+                <a href="https://keeplearning.unrwa.org/" target="_blank" className="relative overflow-hidden bg-white/10 hover:bg-white/20 border border-white/20 rounded-2xl p-4 flex items-center gap-4 text-white transition-all duration-300 backdrop-blur-sm group hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/20">
+                    <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform shadow-inner">
+                        <i className="fas fa-graduation-cap text-orange-300 text-xl"></i>
+                    </div>
+                    <div className="text-right flex-1">
+                        <h4 className="font-bold text-base group-hover:text-orange-200 transition-colors">التعلم الرقمي</h4>
+                        <p className="text-xs text-white/70">منصة الوكالة</p>
+                    </div>
+                     <div className="absolute -left-2 -bottom-2 text-white/5 opacity-0 group-hover:opacity-100 transition-opacity text-5xl transform rotate-12">
+                        <i className="fas fa-graduation-cap"></i>
+                    </div>
                 </a>
             </div>
         </div>

@@ -49,7 +49,7 @@ const Flashcard: React.FC<FlashcardProps> = ({ card, onSave, isSaved = false }) 
 
   return (
     // Beautiful Frame Wrapper
-    <div className="relative mb-8 group transform transition-all duration-300 hover:scale-[1.03]">
+    <div className="relative mb-8 group transform transition-all duration-500 ease-in-out hover:scale-[1.03]">
       {/* Glow Effect */}
       <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 rounded-[2.2rem] opacity-30 blur group-hover:opacity-60 transition duration-500"></div>
       

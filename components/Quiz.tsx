@@ -82,7 +82,7 @@ const Quiz: React.FC<QuizProps> = ({ cards }) => {
 
       {/* Card Flip Container */}
       <div 
-        className="relative w-full h-[500px] cursor-pointer perspective-1000 group transition-transform duration-500 hover:scale-[1.03]"
+        className="relative w-full h-[500px] cursor-pointer perspective-1000 group transition-transform duration-500 hover:scale-[1.02]"
         onClick={() => !isFlipped && setIsFlipped(true)}
       >
         <div 
